@@ -13,6 +13,16 @@
 
             $this->assertEquals("DRAW!", $result);
         }
+
+        function test_game_correctInput() {
+            $test_RockPaperScissors = new RockPaperScissors;
+            $player_one = "turkey";
+            $player_two = "606";
+
+            $result = $test_RockPaperScissors->game($player_one, $player_two);
+
+            $this->assertEquals("Please answer only with 'rock', 'paper', or 'scissors'.", $result);
+        }
     }
 
 
