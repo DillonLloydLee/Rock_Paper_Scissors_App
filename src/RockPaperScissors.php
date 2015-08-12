@@ -3,10 +3,13 @@
 
         function game($player_one, $player_two) {
 
-            if (($player_one != "rock") && ($player_one != "paper") && ($player_one != "scissors")) {
+            $player_one = strtoupper ( $player_one );
+            $player_two = strtoupper ( $player_two );
+
+            if (($player_one != "ROCK") && ($player_one != "PAPER") && ($player_one != "SCISSORS")) {
                 return "Please answer only with 'rock', 'paper', or 'scissors'.";
             }
-            elseif (($player_two != "rock") && ($player_two != "paper") && ($player_two != "scissors")) {
+            elseif (($player_two != "ROCK") && ($player_two != "PAPER") && ($player_two != "SCISSORS")) {
                 return "Please answer only with 'rock', 'paper', or 'scissors'.";
             }
             else {
@@ -15,11 +18,5 @@
 
         }
     }
-
-
-
-
-
-
 
  ?>

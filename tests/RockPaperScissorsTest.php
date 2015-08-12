@@ -23,6 +23,16 @@
 
             $this->assertEquals("Please answer only with 'rock', 'paper', or 'scissors'.", $result);
         }
+
+        function test_game_caps() {
+            $test_RockPaperScissors = new RockPaperScissors;
+            $player_one = "ROCK";
+            $player_two = "Rock";
+
+            $result = $test_RockPaperScissors->game($player_one, $player_two);
+
+            $this->assertEquals("DRAW!", $result);
+        }
     }
 
 
