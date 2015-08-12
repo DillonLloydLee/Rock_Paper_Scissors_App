@@ -1,3 +1,5 @@
+BDD SPEC:
+
 1. Take two inputs
     input 1: "rock"
     input 2: "rock"

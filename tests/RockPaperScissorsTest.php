@@ -53,6 +53,16 @@
 
             $this->assertEquals("Player One Wins!", $result);
         }
+
+        function test_game_playerOnePaperkWin() {
+            $test_RockPaperScissors = new RockPaperScissors;
+            $player_one = "paper";
+            $player_two = "rock";
+
+            $result = $test_RockPaperScissors->game($player_one, $player_two);
+
+            $this->assertEquals("Player One Wins!", $result);
+        }
     }
 
 
