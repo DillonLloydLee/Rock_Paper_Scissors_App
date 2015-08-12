@@ -15,6 +15,9 @@
             elseif (($player_one == "ROCK") && ($player_two == "PAPER")) {
                 return "Player Two Wins!";
             }
+            elseif (($player_one == "ROCK") && ($player_two == "SCISSORS")) {
+                return "Player One Wins!";
+            }
             else {
                 return "DRAW!";
             }
