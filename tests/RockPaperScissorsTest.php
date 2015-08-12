@@ -9,7 +9,7 @@
             $player_one = "rock";
             $player_two = "rock";
 
-            $result = $test_RockPaperScissors->rockPaperScissors($player_one, $player_two);
+            $result = $test_RockPaperScissors->game($player_one, $player_two);
 
             $this->assertEquals("DRAW!", $result);
         }
