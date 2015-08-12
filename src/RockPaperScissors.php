@@ -12,6 +12,9 @@
             elseif (($player_two != "ROCK") && ($player_two != "PAPER") && ($player_two != "SCISSORS")) {
                 return "Please answer only with 'rock', 'paper', or 'scissors'.";
             }
+            elseif (($player_one == "ROCK") && ($player_two == "PAPER")) {
+                return "Player Two Wins!";
+            }
             else {
                 return "DRAW!";
             }
